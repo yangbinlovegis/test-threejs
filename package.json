@@ -1,0 +1,17 @@
+{
+  "name": "webgldeom",
+  "version": "1.0.0",
+  "description": "use threejs demo",
+  "main": "./app/index.js",
+  "scripts": {
+    "webpack": "node node_modules/webpack/bin/webpack.js",
+    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --port 8080 --progress --hot",
+    "build": "node node_modules/webpack/bin/webpack.js -p --devtool hidden-module-source-map"
+  },
+  "author": "bin.yang",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
