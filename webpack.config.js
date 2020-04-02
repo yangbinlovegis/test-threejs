@@ -2,7 +2,6 @@
  * Created by bin.yang on 2016/11/16.
  */
 
-var webpack = require('webpack');
 const ExtractTextPlugin  = require('extract-text-webpack-plugin')
 
 const path = require('path');
@@ -11,10 +10,10 @@ const SRC_PATH = path.resolve(__dirname, './app');
 module.exports = {
     devtool: 'source-map',
 
-    //页面入口文件配置
-    entry:'./app/index.js',
+    // 页面入口文件配置
+    entry: './app/index.js',
 
-    //入口文件输出配置
+    // 入口文件输出配置
     output: {
         filename: './build/bundle.js',
         pathinfo: true,
@@ -24,7 +23,7 @@ module.exports = {
         hot: true,
         inline: true,
         progress: true,
-        port: 8080 //端口你可以自定义
+        port: 8080 // 端口你可以自定义
     },
     resolve: {
         extensions: ['.js', '.jsx'],
